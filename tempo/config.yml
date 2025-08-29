@@ -1,0 +1,7 @@
+server: { http_listen_port: 3200, grpc_listen_port: 9095 }
+distributor: {}
+ingen: { block: { bloom_filter_false_positive: 0.05 } }
+compactor: {}
+metrics_generator:
+  registry: prometheus
+  storage: { path: /var/tempo }
